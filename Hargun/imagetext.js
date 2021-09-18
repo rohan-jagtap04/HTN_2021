@@ -1,11 +1,16 @@
 const tesseract = require("tesseract.js");
-// const fs = require("fs")
+const fs = require("fs")
 
 tesseract
     .recognize("test.jpg", "eng", {logger: (m) => console.log(m),
      })
     .then(({data:{ text } }) => {
-        console.log(text);
+        fs.writeFile("output.txt", text, function(err) {
+            if(err) {
+                return console.log(err);
+            }
+            console.log("Sucess!");
+        });
     })
     .catch((err) => {
         console.log(err.message);
