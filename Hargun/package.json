@@ -1,0 +1,27 @@
+{
+  "name": "htn-2021",
+  "version": "1.0.0",
+  "description": "scans receipts and sorts them based on tax categories for convenience when filing taxes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install tesseract .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-jagtap04/HTN_2021.git"
+  },
+  "keywords": [
+    "ocr",
+    "receipt",
+    "taxes"
+  ],
+  "author": "Hargun Mujral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-jagtap04/HTN_2021/issues"
+  },
+  "homepage": "https://github.com/rohan-jagtap04/HTN_2021#readme",
+  "dependencies": {
+    "tesseract.js": "^2.1.5"
+  }
+}
