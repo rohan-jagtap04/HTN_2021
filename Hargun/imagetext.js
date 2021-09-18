@@ -2,7 +2,7 @@ const tesseract = require("tesseract.js");
 const fs = require("fs")
 
 tesseract
-    .recognize("test.jpg", "eng", {logger: (m) => console.log(m),
+    .recognize("lol.jpg", "eng", {logger: (m) => console.log(m),
      })
     .then(({data:{ text } }) => {
         fs.writeFile("output.txt", text, function(err) {
